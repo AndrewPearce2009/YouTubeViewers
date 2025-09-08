@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Pearce\source\repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\
 YouTubeViewers.wpf
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Pearce\source\repos\YouTubeViewers\YouTubeViewers.wpf\App.xaml
-11407045341
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\App.xaml
+4-248621669
 
-6-814927864
-198-344842731
-MainWindow.xaml;
+9-394694436
+198-2136442823
+Components\YouTubeViewersDetails.xaml;Components\YouTubeViewersListing.xaml;MainWindow.xaml;Views\YouTubeViewersView.xaml;
 
-False
+True
 

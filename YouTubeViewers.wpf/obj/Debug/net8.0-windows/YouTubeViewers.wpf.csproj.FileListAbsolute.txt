@@ -19,3 +19,10 @@ D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\refint\YouTube
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\YouTubeViewers.wpf.pdb
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\YouTubeViewers.wpf.genruntimeconfig.cache
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\ref\YouTubeViewers.wpf.dll
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersDetails.g.cs
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersListing.g.cs
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\YouTubeViewersView.g.cs
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersDetails.baml
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersListing.baml
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\YouTubeViewersView.baml

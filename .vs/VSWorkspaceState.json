@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\YouTubeViewers.wpf",
-    "\\YouTubeViewers.wpf\\bin"
+    "\\YouTubeViewers.wpf\\Views"
   ],
-  "SelectedNode": "\\YouTubeViewers.wpf\\App.xaml",
+  "SelectedNode": "\\YouTubeViewers.wpf\\Views",
   "PreviewInSolutionExplorer": false
 }
