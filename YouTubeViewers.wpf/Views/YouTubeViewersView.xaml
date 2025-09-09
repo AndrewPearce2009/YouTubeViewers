@@ -13,17 +13,24 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition   Width="*" />
                 <ColumnDefinition   Width="auto" />
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Column="0" Text="YouTube Viewers" />
-            <Button Grid.Column="1" Content="Add" />
+            <TextBlock 
+                Grid.Column="0" 
+                FontSize="32" 
+                Text="YouTube Viewers" />
+
+            <Button 
+                Content="Add" 
+                FontSize="16"
+                Grid.Column="1" />
         </Grid>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Margin="0 20 0 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="2*" />

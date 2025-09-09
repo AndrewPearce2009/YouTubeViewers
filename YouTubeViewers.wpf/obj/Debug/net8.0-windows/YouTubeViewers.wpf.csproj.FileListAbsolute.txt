@@ -26,3 +26,4 @@ D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\GeneratedInter
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersDetails.baml
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersListing.baml
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\YouTubeViewersView.baml
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\App.baml
