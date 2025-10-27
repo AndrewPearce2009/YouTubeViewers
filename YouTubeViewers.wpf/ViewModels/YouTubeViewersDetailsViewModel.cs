@@ -20,7 +20,25 @@ namespace YouTubeViewers.wpf.ViewModels
 
         public YouTubeViewersDetailsViewModel(SelectedYouTubeViewerStore selectedYouTubeViewerStore)
         {
-           _selectedYouTubeViewerStore = selectedYouTubeViewerStore;
+            _selectedYouTubeViewerStore = selectedYouTubeViewerStore;
+
+            _selectedYouTubeViewerStore.SelectedYouTubeViewerChanged += SelectedYouTubeViewerStore_SelectedYouTubeViewerChanged;
+        }
+
+        protected override void Dispose()
+        {
+            _selectedYouTubeViewerStore.SelectedYouTubeViewerChanged += SelectedYouTubeViewerStore_SelectedYouTubeViewerChanged;
+
+            base.Dispose();
+        }
+
+        private void SelectedYouTubeViewerStore_SelectedYouTubeViewerChanged()
+        {
+            OnPropertyChanged(nameof(HasSelectedYouTubeViewer));
+            OnPropertyChanged(nameof(Username));
+            OnPropertyChanged(nameof(IsSubscribedDisplay));
+            OnPropertyChanged(nameof(IsMemberDisplay));
+
         }
     }
 }

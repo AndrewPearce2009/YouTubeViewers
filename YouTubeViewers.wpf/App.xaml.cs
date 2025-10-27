@@ -17,9 +17,13 @@ namespace YouTubeViewers.wpf
     {
         private readonly SelectedYouTubeViewerStore _selectedYouTubeViewerStore;
 
+        public App()
+        {
+            _selectedYouTubeViewerStore = new SelectedYouTubeViewerStore();
+        }
+
         protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup(e);
 
             MainWindow = new MainWindow
             {
@@ -27,6 +31,8 @@ namespace YouTubeViewers.wpf
             };
 
             MainWindow.Show();
+
+            base.OnStartup(e);
         }
     }
 

@@ -8,6 +8,9 @@
     <Compile Update="Components\YouTubeViewersListing.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\YouTubeViewersDetailsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\YouTubeViewersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

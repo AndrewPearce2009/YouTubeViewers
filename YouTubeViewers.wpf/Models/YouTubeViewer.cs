@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YouTubeViewers.wpf.Models
 {
-    class YouTubeViewer
+    public class YouTubeViewer
     {
         public string Username { get; }
         public bool IsSubscribed{ get; }
