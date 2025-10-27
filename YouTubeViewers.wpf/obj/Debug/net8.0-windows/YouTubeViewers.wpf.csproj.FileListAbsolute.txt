@@ -27,3 +27,6 @@ D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\You
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersListing.baml
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\YouTubeViewersView.baml
 D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\App.baml
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\YouTubeViewers.wpf.csproj.AssemblyReference.cache
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\bin\Debug\net8.0-windows\DropdownMenuControl.dll
+D:\GIT\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\YouTubeV.22DD1BCE.Up2Date
