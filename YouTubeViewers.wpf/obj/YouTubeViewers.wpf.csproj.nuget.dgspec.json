@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
         "projectName": "YouTubeViewers.wpf",
-        "projectPath": "D:\\GIT\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
-        "packagesPath": "C:\\Users\\Pearce\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\YouTubeViewers\\YouTubeViewers.wpf\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pearce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
