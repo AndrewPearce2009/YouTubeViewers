@@ -1,8 +1,11 @@
-﻿C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\App.xaml;;
+FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Components\YouTubeViewerDetailsForm.xaml;;
 FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Components\YouTubeViewersDetails.xaml;;
 FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Components\YouTubeViewersListing.xaml;;
 FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\MainWindow.xaml;;
+FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Views\AddYouTubeViewerView.xaml;;
+FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Views\EditYouTubeViewerView.xaml;;
 FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Views\YouTubeViewersDetailsView.xaml;;
 FC:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\Views\YouTubeViewersView.xaml;;
 

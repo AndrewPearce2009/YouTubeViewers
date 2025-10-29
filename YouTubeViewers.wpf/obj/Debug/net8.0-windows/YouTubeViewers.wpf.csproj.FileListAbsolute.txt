@@ -66,3 +66,9 @@ C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-w
 C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\YouTubeViewers.wpf.pdb
 C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\YouTubeViewers.wpf.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\ref\YouTubeViewers.wpf.dll
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.g.cs
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\AddYouTubeViewerView.g.cs
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\EditYouTubeViewerView.g.cs
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.baml
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\AddYouTubeViewerView.baml
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\EditYouTubeViewerView.baml

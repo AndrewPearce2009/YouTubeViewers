@@ -17,14 +17,34 @@
             SnapsToDevicePixels="True">
             <Grid>
                 <Grid>
-
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasSelectedYouTubeViewer}" Value="False">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
                     <TextBlock
                         Grid.Row="0"
-                        FontSize="24"
+                        FontSize="18"
+                        TextWrapping="WrapWithOverflow"
                         Text="Please select a viewer to see their details." />
                 </Grid>
 
                 <Grid Grid.IsSharedSizeScope="True">
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasSelectedYouTubeViewer}" Value="True">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
                         <RowDefinition Height="auto" />

@@ -7,6 +7,10 @@
         <ResourceDictionary>
             <SolidColorBrush x:Key="BorderPrimary" Color="#1c1c1c" />
 
+            <Style x:Key="PageHeader" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="32" />
+            </Style>
+
             <Style TargetType="Button">
                 <Setter Property="Foreground" Value="#ffffff" />
                 <Setter Property="Background" Value="#547aff" />
@@ -48,6 +52,39 @@
                                     <ColorAnimation
                                         Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
                                         To="#547aff"
+                                        Duration="0:0:0.025" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.ExitActions>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style
+                x:Key="ButtonSecondary"
+                BasedOn="{StaticResource {x:Type Button}}"
+                TargetType="Button">
+                <Setter Property="Foreground" Value="#000000" />
+                <Setter Property="Background" Value="#e1e1e1" />
+
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Trigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation
+                                        Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                        To="#636363"
+                                        Duration="0:0:0.025" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.EnterActions>
+                        <Trigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ColorAnimation
+                                        Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                        To="#e1e1e1"
                                         Duration="0:0:0.025" />
                                 </Storyboard>
                             </BeginStoryboard>
