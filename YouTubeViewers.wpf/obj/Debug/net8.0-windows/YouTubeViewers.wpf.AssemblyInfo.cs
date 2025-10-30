@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YouTubeViewers.wpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05c22a7b926eed3c5dd2c94bb5f91ceeacacf765")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82f146c3fcd01c1c58a981d337d4c2d3cd3b880a")]
 [assembly: System.Reflection.AssemblyProductAttribute("YouTubeViewers.wpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YouTubeViewers.wpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

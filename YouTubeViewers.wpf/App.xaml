@@ -57,6 +57,10 @@
                             </BeginStoryboard>
                         </Trigger.ExitActions>
                     </Trigger>
+
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.7" />
+                    </Trigger>
                 </Style.Triggers>
             </Style>
 
@@ -74,7 +78,7 @@
                                 <Storyboard>
                                     <ColorAnimation
                                         Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
-                                        To="#636363"
+                                        To="#d6d6d6"
                                         Duration="0:0:0.025" />
                                 </Storyboard>
                             </BeginStoryboard>
