@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace YouTubeViewers.wpf.ViewModels
 {
-    class YouTubeViewerDetailsFormViewModel : ViewModelsBase
+    public class YouTubeViewerDetailsFormViewModel : ViewModelsBase
     {
         private string _username;
         public string Username
@@ -19,6 +20,7 @@ namespace YouTubeViewers.wpf.ViewModels
             {
                 _username = value;
                 OnPropertyChanged(nameof(Username));
+                OnPropertyChanged(nameof(CanSubmit));
             }
         }
 
@@ -51,5 +53,10 @@ namespace YouTubeViewers.wpf.ViewModels
                 OnPropertyChanged(nameof(IsMember));
             }
         }
+
+        public bool CanSubmit => !string.IsNullOrEmpty(Username);
+
+        public ICommand SubmitCommand { get; }
+        public ICommand CancelCommand { get; }
     }
 }

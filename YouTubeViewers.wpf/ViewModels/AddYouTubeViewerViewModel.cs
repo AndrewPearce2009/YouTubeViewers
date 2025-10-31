@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace YouTubeViewers.wpf.ViewModels
 {
-    class AddYouTubeViewerViewModel
+    public class AddYouTubeViewerViewModel : ViewModelsBase
     {
+        public YouTubeViewerDetailsFormViewModel YouTubeViewerDetailsFormViewModel { get; }
+
+        public AddYouTubeViewerViewModel() 
+        {
+            YouTubeViewerDetailsFormViewModel = new YouTubeViewerDetailsFormViewModel();
+        }
     }
 }

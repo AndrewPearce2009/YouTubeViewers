@@ -12,11 +12,8 @@
     FontSize="14"
     mc:Ignorable="d">
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-        <StackPanel Margin="25">
-            <views:AddYouTubeViewerView />
-            <views:EditYouTubeViewerView />
-
-            <!-- <views:YouTubeViewersView /> -->
-        </StackPanel>
+        <Grid Margin="25">
+            <views:YouTubeViewersView DataContext="{Binding YouTubeViewersViewModel}" />
+        </Grid>
     </ScrollViewer>
 </Window>
