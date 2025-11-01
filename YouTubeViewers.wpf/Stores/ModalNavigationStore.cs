@@ -20,9 +20,17 @@ namespace YouTubeViewers.wpf.Stores
             set
             {
                 _currentViewModel = value;
+                CurrentViewModelChanged?.Invoke();
             }
         }
 
+        public bool IsOpen => CurrentViewModel != null;
+
         public event Action CurrentViewModelChanged;
+
+        public void Close()
+        {
+            CurrentViewModel = null;
+        }
     }
 }

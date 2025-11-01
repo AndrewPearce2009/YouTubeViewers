@@ -35,76 +35,7 @@
                     </ListView.ItemContainerStyle>
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Border Padding="10" TextBlock.FontSize="16">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="auto" />
-                                    </Grid.ColumnDefinitions>
-
-                                    <TextBlock Grid.Column="0" Text="{Binding Username}" />
-
-                                    <dd:DropdownMenu Grid.Column="1" Margin="10,0,0,0">
-                                        <Border
-                                            Background="#ffffff"
-                                            BorderBrush="#212121"
-                                            BorderThickness="1">
-                                            <StackPanel MinWidth="120">
-                                                <StackPanel.Resources>
-                                                    <Style TargetType="Button">
-                                                        <Setter Property="Background" Value="#c2c2c2" />
-                                                        <Setter Property="Foreground" Value="#000000" />
-                                                        <Setter Property="Padding" Value="20,10" />
-                                                        <Setter Property="Cursor" Value="Hand" />
-
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="Button">
-                                                                    <Border
-                                                                        Margin="{TemplateBinding Margin}"
-                                                                        Padding="{TemplateBinding Padding}"
-                                                                        Background="{TemplateBinding Background}">
-                                                                        <ContentPresenter />
-                                                                    </Border>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-
-                                                        <Style.Triggers>
-                                                            <Trigger Property="IsMouseOver" Value="True">
-                                                                <Trigger.EnterActions>
-                                                                    <BeginStoryboard>
-                                                                        <Storyboard>
-                                                                            <ColorAnimation
-                                                                                Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
-                                                                                To="#808080"
-                                                                                Duration="0:0:0.025" />
-                                                                        </Storyboard>
-                                                                    </BeginStoryboard>
-                                                                </Trigger.EnterActions>
-                                                                <Trigger.ExitActions>
-                                                                    <BeginStoryboard>
-                                                                        <Storyboard>
-                                                                            <ColorAnimation
-                                                                                Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
-                                                                                To="#c2c2c2"
-                                                                                Duration="0:0:0.025" />
-                                                                        </Storyboard>
-                                                                    </BeginStoryboard>
-                                                                </Trigger.ExitActions>
-                                                            </Trigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-
-                                                </StackPanel.Resources>
-
-                                                <Button Command="{Binding EditCommand}" Content="Edit" />
-                                                <Button Command="{Binding DeleteCommand}" Content="Delete" />
-                                            </StackPanel>
-                                        </Border>
-                                    </dd:DropdownMenu>
-                                </Grid>
-                            </Border>
+                            <local:YouTubeViewersListingItem />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

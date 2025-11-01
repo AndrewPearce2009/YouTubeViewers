@@ -11,6 +11,9 @@
     <Compile Update="Components\YouTubeViewersListing.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\YouTubeViewersListingItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\AddYouTubeViewerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

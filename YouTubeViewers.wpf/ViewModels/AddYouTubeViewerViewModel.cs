@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using YouTubeViewers.wpf.Commands;
+using YouTubeViewers.wpf.Stores;
 
 namespace YouTubeViewers.wpf.ViewModels
 {
@@ -10,9 +13,11 @@ namespace YouTubeViewers.wpf.ViewModels
     {
         public YouTubeViewerDetailsFormViewModel YouTubeViewerDetailsFormViewModel { get; }
 
-        public AddYouTubeViewerViewModel() 
+        public AddYouTubeViewerViewModel(ModalNavigationStore modalNavigationStore) 
         {
-            YouTubeViewerDetailsFormViewModel = new YouTubeViewerDetailsFormViewModel();
+            ICommand cancelCommand = new CloseModalCommand(modalNavigationStore);
+            ICommand submitCommand = null;
+            YouTubeViewerDetailsFormViewModel = new YouTubeViewerDetailsFormViewModel(submitCommand, cancelCommand);
         }
     }
 }

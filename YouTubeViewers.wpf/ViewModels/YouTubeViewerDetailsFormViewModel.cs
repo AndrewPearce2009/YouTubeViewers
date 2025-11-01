@@ -40,6 +40,7 @@ namespace YouTubeViewers.wpf.ViewModels
         }
 
         private bool _isMember;
+
         public bool IsMember
         {
             get
@@ -58,5 +59,10 @@ namespace YouTubeViewers.wpf.ViewModels
 
         public ICommand SubmitCommand { get; }
         public ICommand CancelCommand { get; }
+        public YouTubeViewerDetailsFormViewModel(ICommand submitCommand, ICommand cancelCommand)
+        {
+            SubmitCommand = submitCommand;
+            CancelCommand = cancelCommand;
+        }
     }
 }
