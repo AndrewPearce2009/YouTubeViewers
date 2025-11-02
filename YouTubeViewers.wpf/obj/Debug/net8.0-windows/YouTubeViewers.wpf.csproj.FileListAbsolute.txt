@@ -72,3 +72,6 @@ C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-w
 C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewerDetailsForm.baml
 C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\AddYouTubeViewerView.baml
 C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Views\EditYouTubeViewerView.baml
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\bin\Debug\net8.0-windows\ModalControl.dll
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersListingItem.g.cs
+C:\Users\Admin\Source\Repos\YouTubeViewers\YouTubeViewers.wpf\obj\Debug\net8.0-windows\Components\YouTubeViewersListingItem.baml

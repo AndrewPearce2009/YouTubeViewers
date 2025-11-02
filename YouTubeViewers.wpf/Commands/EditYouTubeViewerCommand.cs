@@ -9,39 +9,38 @@ using YouTubeViewers.wpf.ViewModels;
 
 namespace YouTubeViewers.wpf.Commands
 {
-    public class AddYouTubeViewerCommand : AsyncCommandBase
+    public class EditYouTubeViewerCommand : AsyncCommandBase
     {
-        private readonly AddYouTubeViewerViewModel _addYouTubeViewerViewModel;
+        private readonly EditYouTubeViewerViewModel _editYouTubeViewerViewModel;
         private readonly YouTubeViewersStore _youTubeViewersStore;
         private readonly ModalNavigationStore _modalNavigationStore;
 
-        public AddYouTubeViewerCommand(AddYouTubeViewerViewModel addYouTubeViewerViewModel, YouTubeViewersStore youTubeViewersStore, ModalNavigationStore modalNavigationStore)
+        public EditYouTubeViewerCommand(EditYouTubeViewerViewModel editYouTubeViewerViewModel, YouTubeViewersStore youTubeViewersStore, ModalNavigationStore modalNavigationStore)
         {
-            _addYouTubeViewerViewModel = addYouTubeViewerViewModel;
+            _editYouTubeViewerViewModel = editYouTubeViewerViewModel;
             _youTubeViewersStore = youTubeViewersStore;
             _modalNavigationStore = modalNavigationStore;
         }
         public override async Task ExecuteAsync(object parameter)
         {
-            YouTubeViewerDetailsFormViewModel formViewModel = _addYouTubeViewerViewModel.YouTubeViewerDetailsFormViewModel;
+            YouTubeViewerDetailsFormViewModel formViewModel = _editYouTubeViewerViewModel.YouTubeViewerDetailsFormViewModel;
 
             YouTubeViewer youTubeViewer = new YouTubeViewer(
                 Guid.NewGuid(),
-                formViewModel.Username, 
-                formViewModel.IsSubscribed, 
+                formViewModel.Username,
+                formViewModel.IsSubscribed,
                 formViewModel.IsMember);
 
             try
             {
-                await _youTubeViewersStore.Add(youTubeViewer);
+                await _youTubeViewersStore.Update(youTubeViewer);
 
                 _modalNavigationStore.Close();
             }
-            catch (Exception) 
+            catch (Exception)
             {
                 throw;
             }
-
         }
     }
 }

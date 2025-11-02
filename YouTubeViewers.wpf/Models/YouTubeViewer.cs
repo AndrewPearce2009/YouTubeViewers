@@ -8,12 +8,14 @@ namespace YouTubeViewers.wpf.Models
 {
     public class YouTubeViewer
     {
+        public Guid ID {  get; }
         public string Username { get; }
         public bool IsSubscribed{ get; }
         public bool IsMember { get; }
 
-        public YouTubeViewer(string username, bool isSubscribed, bool isMember)
+        public YouTubeViewer(Guid id, string username, bool isSubscribed, bool isMember)
         {
+            ID = id;
             Username = username;
             IsSubscribed = isSubscribed;
             IsMember = isMember;
