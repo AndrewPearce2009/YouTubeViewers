@@ -23,7 +23,7 @@ namespace YouTubeViewers.wpf
         {
             _modalNavigationStore = new ModalNavigationStore();
             _youTubeViewersStore = new YouTubeViewersStore();
-            _selectedYouTubeViewerStore = new SelectedYouTubeViewerStore();
+            _selectedYouTubeViewerStore = new SelectedYouTubeViewerStore(_youTubeViewersStore);
         }
 
         protected override void OnStartup(StartupEventArgs e)

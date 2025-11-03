@@ -9,6 +9,8 @@ namespace YouTubeViewers.wpf.Stores
 {
     public class SelectedYouTubeViewerStore
     {
+        private readonly YouTubeViewersStore _youTubeViewerStore;
+
         private YouTubeViewer _selectedYouTubeViewer;
         public YouTubeViewer SelectedYouTubeViewer
         {
@@ -25,5 +27,19 @@ namespace YouTubeViewers.wpf.Stores
 
         public event Action SelectedYouTubeViewerChanged;
 
+        public SelectedYouTubeViewerStore(YouTubeViewersStore youTubeViewerStore)
+        {
+            _youTubeViewerStore = youTubeViewerStore;
+
+            _youTubeViewerStore.YouTubeViewerUpdated += _youTubeViewerStore_YouTubeViewerUpdated;
+        }
+
+        private void _youTubeViewerStore_YouTubeViewerUpdated(YouTubeViewer youTubeViewer)
+        {
+            if(youTubeViewer.ID == SelectedYouTubeViewer?.ID)
+            {
+                SelectedYouTubeViewer = youTubeViewer;
+            }
+        }
     }
 }
