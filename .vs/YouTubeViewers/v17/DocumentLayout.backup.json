@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFE534BA-DCD6-4F7A-9705-F0B2322CEB08}|YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.entityframework\\youtubeviewers.entityframework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AFE534BA-DCD6-4F7A-9705-F0B2322CEB08}|YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj|solutionrelative:youtubeviewers.entityframework\\youtubeviewers.entityframework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|solutionrelative:youtubeviewers.wpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.domain\\commands\\ideleteyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|solutionrelative:youtubeviewers.domain\\commands\\ideleteyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFE534BA-DCD6-4F7A-9705-F0B2322CEB08}|YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.entityframework\\migrations\\20251107072411_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE534BA-DCD6-4F7A-9705-F0B2322CEB08}|YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj|solutionrelative:youtubeviewers.entityframework\\migrations\\20251107072411_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.domain\\commands\\iupdateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|solutionrelative:youtubeviewers.domain\\commands\\iupdateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFE534BA-DCD6-4F7A-9705-F0B2322CEB08}|YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.entityframework\\youtubeviewersdesigntimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE534BA-DCD6-4F7A-9705-F0B2322CEB08}|YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj|solutionrelative:youtubeviewers.entityframework\\youtubeviewersdesigntimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.domain\\commands\\icreateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|solutionrelative:youtubeviewers.domain\\commands\\icreateyoutubeviewercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.domain\\queries\\igetallyoutubeviewersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|solutionrelative:youtubeviewers.domain\\queries\\igetallyoutubeviewersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.domain\\models\\youtubeviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D62769A7-2878-4008-B830-93BBD3D6410A}|YouTubeViewers.Domain\\YouTubeViewers.Domain.csproj|solutionrelative:youtubeviewers.domain\\models\\youtubeviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.wpf\\youtubeviewers.wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|solutionrelative:youtubeviewers.wpf\\youtubeviewers.wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.wpf\\viewmodels\\youtubeviewerdetailsformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|solutionrelative:youtubeviewers.wpf\\viewmodels\\youtubeviewerdetailsformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|c:\\users\\admin\\source\\repos\\youtubeviewers\\youtubeviewers.wpf\\stores\\youtubeviewersstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70A677BF-7A45-44F2-9117-E40C633C7D69}|YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj|solutionrelative:youtubeviewers.wpf\\stores\\youtubeviewersstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,115 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IDeleteYouTubeViewerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.Domain\\Commands\\IDeleteYouTubeViewerCommand.cs",
-              "RelativeDocumentMoniker": "YouTubeViewers.Domain\\Commands\\IDeleteYouTubeViewerCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.Domain\\Commands\\IDeleteYouTubeViewerCommand.cs",
-              "RelativeToolTip": "YouTubeViewers.Domain\\Commands\\IDeleteYouTubeViewerCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:47:37.211Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251107072411_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.EntityFramework\\Migrations\\20251107072411_Initial.cs",
+              "RelativeDocumentMoniker": "YouTubeViewers.EntityFramework\\Migrations\\20251107072411_Initial.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.EntityFramework\\Migrations\\20251107072411_Initial.cs",
+              "RelativeToolTip": "YouTubeViewers.EntityFramework\\Migrations\\20251107072411_Initial.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:25:15.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IUpdateYouTubeViewerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.Domain\\Commands\\IUpdateYouTubeViewerCommand.cs",
-              "RelativeDocumentMoniker": "YouTubeViewers.Domain\\Commands\\IUpdateYouTubeViewerCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.Domain\\Commands\\IUpdateYouTubeViewerCommand.cs",
-              "RelativeToolTip": "YouTubeViewers.Domain\\Commands\\IUpdateYouTubeViewerCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Title": "YouTubeViewersDesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.EntityFramework\\YouTubeViewersDesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "YouTubeViewers.EntityFramework\\YouTubeViewersDesignTimeDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.EntityFramework\\YouTubeViewersDesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "YouTubeViewers.EntityFramework\\YouTubeViewersDesignTimeDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:47:17.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICreateYouTubeViewerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.Domain\\Commands\\ICreateYouTubeViewerCommand.cs",
-              "RelativeDocumentMoniker": "YouTubeViewers.Domain\\Commands\\ICreateYouTubeViewerCommand.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.Domain\\Commands\\ICreateYouTubeViewerCommand.cs",
-              "RelativeToolTip": "YouTubeViewers.Domain\\Commands\\ICreateYouTubeViewerCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:46:54.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IGetAllYouTubeViewersQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.Domain\\Queries\\IGetAllYouTubeViewersQuery.cs",
-              "RelativeDocumentMoniker": "YouTubeViewers.Domain\\Queries\\IGetAllYouTubeViewersQuery.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.Domain\\Queries\\IGetAllYouTubeViewersQuery.cs",
-              "RelativeToolTip": "YouTubeViewers.Domain\\Queries\\IGetAllYouTubeViewersQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:44:32.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "YouTubeViewer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.Domain\\Models\\YouTubeViewer.cs",
-              "RelativeDocumentMoniker": "YouTubeViewers.Domain\\Models\\YouTubeViewer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.Domain\\Models\\YouTubeViewer.cs",
-              "RelativeToolTip": "YouTubeViewers.Domain\\Models\\YouTubeViewer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:37:15.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "YouTubeViewers.wpf",
-              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
-              "RelativeDocumentMoniker": "YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
-              "RelativeToolTip": "YouTubeViewers.wpf\\YouTubeViewers.wpf.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-05T22:35:24.219Z",
+              "WhenOpened": "2025-11-07T07:12:11.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "YouTubeViewers.EntityFramework",
-              "DocumentMoniker": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj",
-              "RelativeDocumentMoniker": "YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Source\\Repos\\YouTubeViewers\\YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj",
-              "RelativeToolTip": "YouTubeViewers.EntityFramework\\YouTubeViewers.EntityFramework.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-05T22:34:46.711Z",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.wpf\\App.xaml.cs",
+              "RelativeDocumentMoniker": "YouTubeViewers.wpf\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.wpf\\App.xaml.cs",
+              "RelativeToolTip": "YouTubeViewers.wpf\\App.xaml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAswDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T07:00:15.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "YouTubeViewerDetailsFormViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.wpf\\ViewModels\\YouTubeViewerDetailsFormViewModel.cs",
-              "RelativeDocumentMoniker": "YouTubeViewers.wpf\\ViewModels\\YouTubeViewerDetailsFormViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.wpf\\ViewModels\\YouTubeViewerDetailsFormViewModel.cs",
-              "RelativeToolTip": "YouTubeViewers.wpf\\ViewModels\\YouTubeViewerDetailsFormViewModel.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwvy4AAAANAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "YouTubeViewersStore.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.wpf\\Stores\\YouTubeViewersStore.cs",
+              "RelativeDocumentMoniker": "YouTubeViewers.wpf\\Stores\\YouTubeViewersStore.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\YouTubeViewers\\YouTubeViewers.wpf\\Stores\\YouTubeViewersStore.cs",
+              "RelativeToolTip": "YouTubeViewers.wpf\\Stores\\YouTubeViewersStore.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T02:41:16.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T06:54:58.272Z"
             }
           ]
         }
