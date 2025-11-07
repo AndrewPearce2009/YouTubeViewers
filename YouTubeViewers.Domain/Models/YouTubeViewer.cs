@@ -8,7 +8,7 @@ namespace YouTubeViewers.Domain.Models
 {
     public class YouTubeViewer
     {
-        public Guid ID {  get; }
+        public Guid ID { get; }
         public string Username { get; }
         public bool IsSubscribed{ get; }
         public bool IsMember { get; }

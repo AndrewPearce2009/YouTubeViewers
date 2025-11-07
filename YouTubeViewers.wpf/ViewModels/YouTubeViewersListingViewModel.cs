@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using YouTubeViewers.wpf.Commands;
 using YouTubeViewers.Domain.Models;
+using YouTubeViewers.EntityFramework.Commands;
+using YouTubeViewers.wpf.Commands;
 using YouTubeViewers.wpf.Stores;
 
 namespace YouTubeViewers.wpf.ViewModels
@@ -36,6 +37,9 @@ namespace YouTubeViewers.wpf.ViewModels
             }
         }
 
+        public ICommand LoadYouTubeViewersCommand { get; }
+
+        // Constructor 
         public YouTubeViewersListingViewModel(YouTubeViewersStore youTubeViewersStore, SelectedYouTubeViewerStore selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
         {
             _youTubeViewersStore = youTubeViewersStore;
@@ -43,16 +47,40 @@ namespace YouTubeViewers.wpf.ViewModels
             _modalNavigationStore = modalNavigationStore;
             _youTubeViewersListingItemViewModels = new ObservableCollection<YouTubeViewersListingItemViewModel>();
 
+            LoadYouTubeViewersCommand = new LoadYouTubeViewersCommand(youTubeViewersStore);
+
+            _youTubeViewersStore.YouTubeViewersLoaded += YouTubeViewersStore_YouTubeViewersLoaded;
             _youTubeViewersStore.YouTubeViewerAdded += YouTubeViewersStore_YouTubeViewerAdded;
             _youTubeViewersStore.YouTubeViewerUpdated += YouTubeViewersStore_YouTubeViewerUpdated;
-
+            _youTubeViewersStore.YouTubeViewerDeleted += YouTubeViewersStore_YouTubeViewerDeleted;
         }
 
 
+        private void YouTubeViewersStore_YouTubeViewersLoaded()
+        {
+            _youTubeViewersListingItemViewModels.Clear();
+
+            foreach (YouTubeViewer youTubeViewer in _youTubeViewersStore.YouTubeViewers)
+            {
+                AddYouTubeViewer(youTubeViewer);
+            }
+        }
+
+        public static YouTubeViewersListingViewModel loadViewModel(YouTubeViewersStore youTubeViewersStore, SelectedYouTubeViewerStore selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
+        {
+            YouTubeViewersListingViewModel viewModel = new YouTubeViewersListingViewModel(youTubeViewersStore, selectedYouTubeViewerStore, modalNavigationStore);
+
+            viewModel.LoadYouTubeViewersCommand.Execute(null);
+            
+            return viewModel;
+        }
+
         protected override void Dispose()
         {
+            _youTubeViewersStore.YouTubeViewersLoaded -= YouTubeViewersStore_YouTubeViewersLoaded;
             _youTubeViewersStore.YouTubeViewerAdded -= YouTubeViewersStore_YouTubeViewerAdded;
             _youTubeViewersStore.YouTubeViewerUpdated -= YouTubeViewersStore_YouTubeViewerUpdated;
+            _youTubeViewersStore.YouTubeViewerDeleted -= YouTubeViewersStore_YouTubeViewerDeleted;
 
             base.Dispose();
         }
@@ -69,6 +97,15 @@ namespace YouTubeViewers.wpf.ViewModels
             if(youTubeViewerViewModel != null )
             {
                 youTubeViewerViewModel.Update(youTubeViewer);
+            }
+        }
+        private void YouTubeViewersStore_YouTubeViewerDeleted(Guid id)
+        {
+            YouTubeViewersListingItemViewModel itemViewModel = _youTubeViewersListingItemViewModels.FirstOrDefault(y => y.YouTubeViewer?.ID == id);
+
+            if (itemViewModel != null) 
+            { 
+                _youTubeViewersListingItemViewModels.Remove(itemViewModel);        
             }
         }
 

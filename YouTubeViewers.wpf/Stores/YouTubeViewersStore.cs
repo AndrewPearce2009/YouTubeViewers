@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.RightsManagement;
 using System.Text;
 using System.Threading.Tasks;
 using YouTubeViewers.Domain.Commands;
@@ -15,7 +16,15 @@ namespace YouTubeViewers.wpf.Stores
         private readonly ICreateYouTubeViewerCommand _createYouTubeViewerCommand;
         private readonly IUpdateYouTubeViewerCommand _updateYouTubeViewerCommand;
         private readonly IDeleteYouTubeViewerCommand _deleteYouTubeViewerCommand;
+        
+        private readonly List<YouTubeViewer> _youTubeViewers;
 
+        public IEnumerable<YouTubeViewer> YouTubeViewers => _youTubeViewers;
+
+        public event Action YouTubeViewersLoaded;
+        public event Action<YouTubeViewer> YouTubeViewerAdded;
+        public event Action<YouTubeViewer> YouTubeViewerUpdated;
+        public event Action<Guid> YouTubeViewerDeleted;
         public YouTubeViewersStore(IGetAllYouTubeViewersQuery getAllYouTubeViewersQuery, 
             ICreateYouTubeViewerCommand createYouTubeViewerCommand, 
             IUpdateYouTubeViewerCommand updateYouTubeViewerCommand, 
@@ -25,15 +34,25 @@ namespace YouTubeViewers.wpf.Stores
             _createYouTubeViewerCommand = createYouTubeViewerCommand;
             _updateYouTubeViewerCommand = updateYouTubeViewerCommand;
             _deleteYouTubeViewerCommand = deleteYouTubeViewerCommand;
+
+            _youTubeViewers = new List<YouTubeViewer>();
         }
 
-        public event Action<YouTubeViewer> YouTubeViewerAdded;
-        public event Action<YouTubeViewer> YouTubeViewerUpdated;
+        public async Task Load()
+        {
+            IEnumerable<YouTubeViewer> youTubeViewers = await _getAllYouTubeViewersQuery.Execute();
+            
+            _youTubeViewers.Clear();
+            _youTubeViewers.AddRange(youTubeViewers);
 
+            YouTubeViewersLoaded?.Invoke();
+        }
 
         public async Task Add(YouTubeViewer youTubeViewer)
         {
             await _createYouTubeViewerCommand.Execute(youTubeViewer);
+
+            _youTubeViewers.Add(youTubeViewer);
 
             YouTubeViewerAdded?.Invoke(youTubeViewer);
         }
@@ -42,7 +61,27 @@ namespace YouTubeViewers.wpf.Stores
         {
             await _updateYouTubeViewerCommand.Execute(youTubeViewer);
 
-            YouTubeViewerUpdated?.Invoke(youTubeViewer);
+            int currentIndex = _youTubeViewers.FindIndex(y => y.ID == youTubeViewer.ID);
+
+            if (currentIndex != -1)
+            {
+                _youTubeViewers[currentIndex] = youTubeViewer;
+            }
+            else
+            {
+                _youTubeViewers.Add(youTubeViewer);
+            }
+
+                YouTubeViewerUpdated?.Invoke(youTubeViewer);
+        }
+
+        public async Task Delete(Guid id)
+        {
+            await _deleteYouTubeViewerCommand.Execute(id);
+
+            _youTubeViewers.RemoveAll(y => y.ID == id);
+
+            YouTubeViewerDeleted?.Invoke(id);
         }
     }
 }
