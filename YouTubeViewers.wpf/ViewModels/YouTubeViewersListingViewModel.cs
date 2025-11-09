@@ -37,8 +37,6 @@ namespace YouTubeViewers.wpf.ViewModels
             }
         }
 
-        public ICommand LoadYouTubeViewersCommand { get; }
-
         // Constructor 
         public YouTubeViewersListingViewModel(YouTubeViewersStore youTubeViewersStore, SelectedYouTubeViewerStore selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
         {
@@ -46,8 +44,6 @@ namespace YouTubeViewers.wpf.ViewModels
             _selectedYouTubeViewerStore = selectedYouTubeViewerStore;
             _modalNavigationStore = modalNavigationStore;
             _youTubeViewersListingItemViewModels = new ObservableCollection<YouTubeViewersListingItemViewModel>();
-
-            LoadYouTubeViewersCommand = new LoadYouTubeViewersCommand(youTubeViewersStore);
 
             _youTubeViewersStore.YouTubeViewersLoaded += YouTubeViewersStore_YouTubeViewersLoaded;
             _youTubeViewersStore.YouTubeViewerAdded += YouTubeViewersStore_YouTubeViewerAdded;
@@ -64,15 +60,6 @@ namespace YouTubeViewers.wpf.ViewModels
             {
                 AddYouTubeViewer(youTubeViewer);
             }
-        }
-
-        public static YouTubeViewersListingViewModel loadViewModel(YouTubeViewersStore youTubeViewersStore, SelectedYouTubeViewerStore selectedYouTubeViewerStore, ModalNavigationStore modalNavigationStore)
-        {
-            YouTubeViewersListingViewModel viewModel = new YouTubeViewersListingViewModel(youTubeViewersStore, selectedYouTubeViewerStore, modalNavigationStore);
-
-            viewModel.LoadYouTubeViewersCommand.Execute(null);
-            
-            return viewModel;
         }
 
         protected override void Dispose()
@@ -101,7 +88,8 @@ namespace YouTubeViewers.wpf.ViewModels
         }
         private void YouTubeViewersStore_YouTubeViewerDeleted(Guid id)
         {
-            YouTubeViewersListingItemViewModel itemViewModel = _youTubeViewersListingItemViewModels.FirstOrDefault(y => y.YouTubeViewer?.ID == id);
+            YouTubeViewersListingItemViewModel itemViewModel = 
+                _youTubeViewersListingItemViewModels.FirstOrDefault(y => y.YouTubeViewer?.ID == id);
 
             if (itemViewModel != null) 
             { 

@@ -9,6 +9,7 @@
       "YouTubeViewers.wpf/1.0.0": {
         "dependencies": {
           "DropdownMenu.WPF": "1.0.0",
+          "LoadingSpinner.WPF": "1.0.0",
           "SimpleModal.WPF": "1.0.0",
           "YouTubeViewers.Domain": "1.0.0",
           "YouTubeViewers.EntityFramework": "1.0.0"
@@ -20,6 +21,14 @@
       "DropdownMenu.WPF/1.0.0": {
         "runtime": {
           "lib/netcoreapp3.1/DropdownMenuControl.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LoadingSpinner.WPF/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/LoadingSpinnerControl.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -447,6 +456,13 @@
       "sha512": "sha512-7S90a70go9Cko9y5Ugs3YEev+EboKs8uicIw5clxa2uTho+/pAHAx7NRq0HbAsVAKAobAqL9goAlI/elRbNsxA==",
       "path": "dropdownmenu.wpf/1.0.0",
       "hashPath": "dropdownmenu.wpf.1.0.0.nupkg.sha512"
+    },
+    "LoadingSpinner.WPF/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-szXy14LPJMKOG51LfOP4nLx9CtqsODA52LzUHHN+N8WXTIxu99289aTZMHRywomsVPiOtA4RKgWqPm/uffOUmw==",
+      "path": "loadingspinner.wpf/1.0.0",
+      "hashPath": "loadingspinner.wpf.1.0.0.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/9.0.10": {
       "type": "package",

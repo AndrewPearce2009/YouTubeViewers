@@ -20,7 +20,7 @@ namespace YouTubeViewers.EntityFramework.Queries
 
         public async Task<IEnumerable<YouTubeViewer>> Execute()
         {
-            using(YouTubeViewersDbContext context =  _contextFactory.Create())
+            using (YouTubeViewersDbContext context =  _contextFactory.Create())
             {
                 var youTubeViewerDtos = await context.YouTubeViewers.ToListAsync();
 

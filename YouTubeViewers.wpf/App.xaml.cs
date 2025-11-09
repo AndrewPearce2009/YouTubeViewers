@@ -54,7 +54,7 @@ namespace YouTubeViewers.wpf
                 context.Database.Migrate();
             }
 
-            YouTubeViewersViewModel youTubeViewersViewModel = new YouTubeViewersViewModel(
+            YouTubeViewersViewModel youTubeViewersViewModel = YouTubeViewersViewModel.LoadViewModel(
                 _youTubeViewersStore,
                 _selectedYouTubeViewerStore,
                 _modalNavigationStore);

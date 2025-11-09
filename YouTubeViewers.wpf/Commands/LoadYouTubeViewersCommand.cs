@@ -5,20 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 using YouTubeViewers.wpf.Commands;
 using YouTubeViewers.wpf.Stores;
+using YouTubeViewers.wpf.ViewModels;
 
 namespace YouTubeViewers.EntityFramework.Commands
 {
     public class LoadYouTubeViewersCommand : AsyncCommandBase
     {
+        private readonly YouTubeViewersViewModel _youTubeViewersViewModel;
         private readonly YouTubeViewersStore _youTubeViewersStore;
 
-        public LoadYouTubeViewersCommand(YouTubeViewersStore youTubeViewersStore)
+        public LoadYouTubeViewersCommand(YouTubeViewersViewModel youTubeViewersViewModel, YouTubeViewersStore youTubeViewersStore)
         {
+            _youTubeViewersViewModel = youTubeViewersViewModel;
             _youTubeViewersStore = youTubeViewersStore;
         }
 
         public override async Task ExecuteAsync(object parameter)
         {
+            _youTubeViewersViewModel.ErrorMessage = null;
+            _youTubeViewersViewModel.IsLoading = true;
+
             try
             {
                 await _youTubeViewersStore.Load();
@@ -26,7 +32,11 @@ namespace YouTubeViewers.EntityFramework.Commands
             catch (Exception)
             {
 
-                throw;
+                _youTubeViewersViewModel.ErrorMessage = "Failed to load YouTube viewers. Please restart the application.";
+            }
+            finally
+            {
+                _youTubeViewersViewModel.IsLoading = false;
             }
         }
     }

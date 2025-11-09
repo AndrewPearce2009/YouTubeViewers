@@ -24,6 +24,9 @@ namespace YouTubeViewers.wpf.Commands
 
         public override async Task ExecuteAsync(object parameter)
         {
+            _youTubeViewersListingItemViewModel.ErrorMessage = null;
+            _youTubeViewersListingItemViewModel.IsDeleting = true;
+
             YouTubeViewer youTubeViewer = _youTubeViewersListingItemViewModel.YouTubeViewer;
 
             try
@@ -32,8 +35,12 @@ namespace YouTubeViewers.wpf.Commands
             }
             catch (Exception)
             {
+                _youTubeViewersListingItemViewModel.ErrorMessage = "Failed to delete YouTube viewer. Please try again later.";
 
-                throw;
+            }
+            finally
+            {
+                _youTubeViewersListingItemViewModel.IsDeleting = false;
             }
         }
 }

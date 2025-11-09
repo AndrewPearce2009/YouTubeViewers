@@ -55,7 +55,39 @@ namespace YouTubeViewers.wpf.ViewModels
             }
         }
 
+        private bool _isSubmitting;
+        public bool IsSubmitting
+        {
+            get
+            {
+                return _isSubmitting;
+            }
+
+            set
+            {
+                _isSubmitting = value;
+                OnPropertyChanged(nameof(IsSubmitting));
+            }
+        }
+
         public bool CanSubmit => !string.IsNullOrEmpty(Username);
+
+        private string _errorMessage;
+        public string ErrorMessage
+        {
+            get
+            {
+                return _errorMessage;
+            }
+            set
+            {
+                _errorMessage = value;
+                OnPropertyChanged(nameof(ErrorMessage));
+                OnPropertyChanged(nameof(HasErrorMessage));
+            }
+        }
+
+        public bool HasErrorMessage => !string.IsNullOrEmpty(ErrorMessage);
 
         public ICommand SubmitCommand { get; }
         public ICommand CancelCommand { get; }
