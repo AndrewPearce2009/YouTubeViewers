@@ -32,6 +32,12 @@ namespace YouTubeViewers.wpf.Stores
             _youTubeViewerStore = youTubeViewerStore;
 
             _youTubeViewerStore.YouTubeViewerUpdated += _youTubeViewerStore_YouTubeViewerUpdated;
+            _youTubeViewerStore.YouTubeViewerAdded += _youTubeViewerStore_YouTubeViewerAdded;
+        }
+
+        private void _youTubeViewerStore_YouTubeViewerAdded(YouTubeViewer youTubeViewer)
+        {
+            SelectedYouTubeViewer = youTubeViewer;
         }
 
         private void _youTubeViewerStore_YouTubeViewerUpdated(YouTubeViewer youTubeViewer)

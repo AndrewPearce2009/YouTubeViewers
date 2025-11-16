@@ -27,7 +27,9 @@
                 <ListView
                     BorderThickness="0"
                     ItemsSource="{Binding YouTubeViewersListingItemViewModels}"
-                    SelectedItem="{Binding SelectedYouTubeViewerListingItemViewModel}">
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    SelectedItem="{Binding SelectedYouTubeViewerListingItemViewModel}"
+                    SelectionMode="Single">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch" />
